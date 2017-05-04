@@ -1,0 +1,367 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+/*body {
+	width:1366px;
+	height:768px;
+}*/
+
+body {
+		width:1000px;
+		margin:0 auto;
+		padding:70px;
+}
+
+/*--------------NAVIGATION AND DROPDOWN MENU---------------*/
+.nav-main {
+		background-color:#F7F4EA;
+		height: 50px;
+		font-family: 'Baloo', cursive;
+		font-size:1.2em;
+		width:100%;
+}
+
+.nav-main > ul {
+		margin:0;
+		padding:0;
+		float:left;
+		list-style-type:none;
+}
+
+.nav-main > ul > li {
+		float:left;
+}
+/*float left so that the navigation items will appear side by side horizontally.*/
+
+.nav-item {
+		display:inline-block;
+		padding:10px 20px;
+		/*10px for top and bottom, 20px for left and right*/
+		line-height:30px;
+		color:#085878;
+		/*dark blue navigation links*/
+		text-decoration:none;
+		/*this gets rid of the defult underline of the links*/
+
+}
+
+.nav-item:hover {
+		background-color:#FDF2D7;
+		color:#2F2F2F;
+}
+
+.nav-item:focus {
+		background-color:#FDF2D7;
+}
+
+/*make the dropdown menu show*/
+.nav-item:focus ~ .nav-content{
+/*~ means that it will target all the elements along the same level as the nav-item.*/
+		max-height:300px;
+		transition:max-height 0.4s ease-in;
+		/*max-height is the element to impliment the transistion on, 0.4s is the speed of the transission and ease-in is the type of transission.*/
+		-o-transition:max-height 0.4s ease-in;
+		/*so that it will work on opera browsers*/
+}
+
+.nav-content {
+/*This is the dropdown menu*/
+		position:absolute;
+		/*so that it doesn't shift the rest of the navigation links*/
+		top:120px;
+		/*so that the dropdown menu appears stright under the navigation bar tab*/
+		overflow:hidden;
+		/*incase anything is larger than the given area*/
+		background-color:#FDF2D7;
+		max-height:0;
+		/*this means that initially the content of the dropdown menu would not apepar*/
+		z-index:1;
+		/*so that the dropdown menu will be on top of the content of the page*/
+}
+
+.nav-content a {
+		color:#085878;
+		text-decoration:none;
+		/*this is the dropdown menu's text colour and decoration.*/
+}
+
+.nav-content a:hover {
+		text-decoration:underline;
+		color:#2f2f2f;
+		/*upon hover, the text will change colour and have an underline appear*/
+}
+
+.nav-sub {
+		padding:15px;
+}
+
+.nav-sub ul {
+		padding:0;
+		margin:0;
+		list-style-type:none;
+}
+
+.nav-sub ul a {
+		display:inline-block;
+		/*so that padding can be given and the content stays in one line*/
+		padding:9px 0px;
+		/*6px spaces the line of text out from each other vertically*/
+		text-align:left;
+}
+
+.nav-content:active {
+		max-height:400px;
+}
+/*this allows the drop down menu to stay when clicking the link contained within it*/
+
+.current a {
+		background-color:#085878;
+		color:#F7F4EA;
+}
+
+/*-------END OF NAVIGATION and DROPDOWN MENU-----*/
+
+/*---------HEADER image with text and background on top--------*/
+.header_image {
+		position: relative;
+		width:750px;
+		top:45px;
+		margin:0 auto;
+		/*given the margin, the header image will sit in the center of the page.*/
+}
+
+.header_image h1 {
+		position:absolute;
+		top:150px;
+		left:0;
+		width:40%;
+		height:200px;
+		text-align:right;
+		background-color:rgba(8, 88, 120, 0.15);
+		/*this sets the text background to be translucent*/
+		color:#2F2F2F;
+		padding:20px 20px;
+		font-family: 'Ubuntu', sans-serif;
+		font-size:2.9em;
+}
+
+.header_image p {
+		position:absolute;
+		top:350px;
+		left:0;
+		width:40%;
+		text-align:right;
+}
+/*this and the selector before this one places the text on top of the header image*/
+
+p span {
+		color:#FDA648;
+		/*orange text against dark background to grab attention*/
+		background-color:#2F2F2F;
+		padding:10px;
+		font-weight:bold;
+		font-family: 'Quicksand', sans-serif;
+		font-size:1.1em;
+}
+/*-------------END HEADER WITH TEXT AND IMAGE ON TOP-----------*/
+header div+p {
+	margin-top:90px;
+	text-align:center;
+	font-family: 'Quicksand', sans-serif;
+	font-size:0.9em;
+	color:#2F2F2F;
+}
+
+/*--------------THE 3 SUB-LINKS-------------------*/
+section {
+		margin:70px 0;
+		padding:30px 0;
+}
+
+.sub_three {
+		position:relative;
+		width:326px;
+		float:left;
+		margin-left:5px;
+}
+
+.sub_three_t {
+		position:absolute;
+		top:200px;
+		width:50%;
+		text-align:center;
+		background-color:#ffffff;
+		color:#FDA648;
+		padding:8px 5px;
+		margin-left:80px;
+		display:inline-block;
+		text-decoration:none;
+		font-family: 'Baloo', cursive;
+}
+
+.sub_three_t:hover {
+		background-color:#2F2F2F;
+		/*upon hover, the three links' background colour changes to a darker colour*/
+}
+
+/*This stops footer from overlaping the 3 sub links*/
+.clearfix:after {
+		content: ".";
+		/*a dot is placed straight after the clearfix div*/
+		visibility:hidden;
+		/*makes the dot invisible*/
+		height:0;
+		clear:both;
+		/*clears both left and right floats*/
+		display:block;
+}
+/*--------------END THE 3 SUB----------------*/
+
+/*--------------GUIDE's 4 Intro and LINKS----------------*/
+.page_nav_title {
+		font-family: 'Baloo', cursive;
+		font-size:3em;
+		color:#FDA648;
+		margin-bottom:30px;
+}
+
+.header_icon, .page_nav_title {
+		float:left;
+}
+
+.header_icon img{
+		display:block;
+		padding:0 20px;
+		margin-top:60px;
+		margin-left:-20px;
+}
+/*this allows the icon to appear before the text*/
+
+.guide_outline {
+		width:90%;
+		padding:20px;
+		overflow:hidden;
+}
+
+.guide_outline img {
+		margin-left:150px;
+		float:left;
+		margin-bottom:10px;
+}
+
+.guide_outline div {
+		background-color:#F7F4EA;
+		float: right;
+		width:370px;
+		text-align: left;
+		padding:20px 10px;
+		font-family: 'Quicksand', sans-serif;
+		font-size:1em;
+		color:#2F2F2F;
+}
+
+.guide_outline div a {
+		font-weight: bold;
+		font-family: 'Ubuntu', sans-serif;
+		font-style:medium;
+		font-size: 1.5em;
+		text-decoration:none;
+		color:#085878;
+}
+
+.guide_outline div a:hover {
+		color:#2F2F2F;
+		background-color:white;
+		font-size:1.8em;
+}
+/*-----------END GUIDE's 4 Intro and Links-------------*/
+
+/*-------------FOOTER-----------*/
+footer {
+		position:absolute;
+		width:900px;
+		padding:50px;
+		background-color:#F7F4EA;
+		font-family: 'Quicksand', sans-serif;
+		margin-top:50px;
+		margin-bottom:0;
+}
+
+.footer_logo {
+		float:left;
+		margin-top:50px;
+		margin-left:30px;
+}
+
+.disclaimer {
+		text-align:left;
+		width:45%;
+		font-family: 'Quicksand', sans-serif;
+		font-size:0.6em;
+		float:left;
+		margin-left:80px;
+		margin-top:50px;
+}
+
+.footer_links {
+		text-align:right;
+		color:#085878;
+}
+
+.footer_links p {
+		font-size:0.9em;
+		font-weight:bold;
+		margin-top:-10px;
+}
+/*affects social media links text on footer*/
+
+.footer_links ul {
+		list-style-type:none;
+		/*gets rid of all the list styling of the footer links*/
+}
+
+.footer_nav {
+		list-style-type:none;
+		font-weight:bold;
+		font-family: 'Quicksand', sans-serif;
+		font-size:0.9em;
+}
+
+.footer_nav a {
+		text-decoration:none;
+		color:#085878;
+}
+
+.footer_nav a:hover {
+		text-decoration:underline;
+		color:#2F2F2F;
+}
+
+.footer_nav_addi {
+		font-weight:normal;
+		font-size:0.7em;
+}

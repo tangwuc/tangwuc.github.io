@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+      <meta name="How to take care of your cat" content="Cat care guide for elderly">
+      <title>Cat Care Guide</title>
+      <link href="css/mainstyles.css" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+      <!--This is the link to the font used for the naviagtion text and individual pages' h1 (excludes home page's)-->
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+      <!--This is the link to the font used for home page's h1 and h2s of cat care guide-->
+      <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+      <!--Font for tag line, paragraphs and footer links-->
+</head>
+<body>
+<header>
+  <nav class="nav-main">
+      <!--the nav is given a class so that it can be targeted in CSS-->
+      <ul>
+        <li><a href="index.html" class="nav-item" title="MyCat home page">HOME</a></li>
+        <li><a href="about.html" class="nav-item" title="About MyCat">ABOUT</a></li>
+        <li><a href="index.html" class="nav-item">
+            <img src="images/logo.png" alt="MyCat logo" style="width:200px; height:109px;">
+            <!--This is the logo of my website; it will appear in the middle of the top navigation bar and be a clickable link back to the home page.-->
+        </a></li>
+        <li><a href="#" class="nav-item" title="Cat Care Guide menu">CAT CARE GUIDE</a>
+        <!-- A # is used as the value of href as this link is a click-able dropdown menu, and therefore is not going to another link.-->
+            <div class="nav-content">
+            <!--this will have a maximum height of zero, so the dropdown menu's content can be hidden when not required. Better than putting this in under nav-sub as it can get more complicated.-->
+                <div class="nav-sub">
+                      <ul>
+                        <li><a href="shelter.html" title="Creating My Cat&apos;s Home">Creating My Cat&apos;s Home</a></li>
+                        <li><a href="food.html" title="Feeding My Cat">Feeding My Cat</a></li>
+                        <li><a href="hygiene.html" title="Taking Care of My Cat&apos;s Hygiene">Taking Care of My Cat&apos;s Hygiene</a></li>
+                        <li><a href="tips.html" title="Tips for Better Care of My Cat">Tips for Better Care</a></li>
+                      </ul>
+                </div>
+            </div>
+        </li>
+        <li><a href="adoption.html" class="nav-item" title="The basic adoption process">ADOPTION PROCESS</a></li>
+      </ul>
+  </nav>
+</header>
+
+
+
+
+  <main>
+      <!--icon and heading positioned around top left hand coner of page, indicates the top navigation link it is under (if any)-->
+      <header>
+      <div class="header_icon"><img src="images/icon_guide.png" alt="MyCat guide icon" style:"width:90;height:87;"></div>
+      <h1 class="page_nav_title">CARE GUIDE</h1>
+      </header>
+
+      <!--the four photos and corresponding link with short description-->
+      <article class="guide_outline">
+        <a href="shelter.html">
+          <img src="images/guide_shelter.jpg" alt="Two Sleeping Cats" style="width:350px;height:212px;">
+          <!--Harada, Akimasa. 2017. “Moment”. Reference. Accessed April 26, https://www.reference.com/pets-animals/percentage-day-cats-spend-sleeping-690ebe0d82d2f0e2.-->
+        </a>
+        <div>
+            <a href="shelter.html" title="Creating My Cat&apos;s Home">Creating My Cat&apos;s Home</a>
+            <p>The art of creating a warm and safe environment for my cat.<br> Covering the basic nessecities that my cat would need, such as&#58; bedding, toys and litter.</p>
+        </div>
+      </article>
+
+      <article class="guide_outline">
+        <a href="food.html">
+          <img src="images/guide_food.jpg" alt="Cat Eating" style="width:350px;height:212px;">
+          <!--Viktor. 2017. ACS. Accessed March 29, https://www.acs.org/content/acs/en/pressroom/presspacs/2016/acs-presspac-january-6-2016/fish-flavored-cat-food-could-contribue-to-feline-hyperthyroidism.html. -->
+        </a>
+        <div>
+            <a href="food.html" title="Feeding My Cat">Feeding My Cat</a>
+            <p>How much should my cat eat and what should it eat.<br> Important questions answered for my cat to stay healthy.</p>
+        </div>
+      </article>
+
+      <article class="guide_outline">
+        <a href="hygiene.html">
+          <img src="images/guide_hygiene.jpg" alt="Cat Being Brushed" style="width:350px;height:212px;">
+          <!--Bright, Eloise. 2013. “Cat Grooming”. Love That Pet. https://www.lovethatpet.com/cats/grooming/grooming-tips/. -->
+        </a>
+        <div>
+            <a href="hygiene.html" title="Taking Care of My Cat&apos;s Hygiene">Taking Care of My Cat&apos;s Hygiene</a>
+            <p>Maintaining my cat&apos;s hygiene by brushing and medicure, the know hows of grooming.</p>
+        </div>
+      </article>
+
+      <article class="guide_outline">
+        <a href="tips.html">
+          <img src="images/guide_tips.jpg" alt="Cat playing" style="width:350px;height:212px;">
+          <!--2017. “Toys – Choosing Safe Play Toys.” Vet West. Accessed March 29, https://www.vetwest.com.au/pet-library/toys-choosing-safe-play-toys-for-your-cat. -->
+        </a>
+        <div>
+            <a href="tips.html" title="Tips for Better Care of My Cat">Tips for Better Care</a>
+            <p>Know the hazards cats may face from daily items that are used and prevent fatal accidents from happening.</p>
+        </div>
+      </article>
+
+  </main>
+
+
+  <footer>
+<!--The logo goes to the LEFT in the footer-->
+<div class="footer_logo"
+      <a href="index.html" title="MyCat">
+        <img src="images/logo.png" alt="MyCat logo" style="width=172px;height=94px;">
+      </a>
+</div>
+<!--This content goes in the MIDDLE of the footer-->
+<div class="disclaimer">
+      <p>This website has been created as part of an assignment in an approved course of study for Curtin University and contains copyright material not created by the author. All copyright material used remains copyright of the respective owners and has been used here pursuant to Section 40 of the Copyright Act 1968 &#40;Commonwealth of Australia&#41;. No part of this work may be reproduced without consent of the original copyright owners. See code comments for references.</p>
+</div>
+<!--This goes to the RIGHT in the footer-->
+<div class="footer_links">
+          <p>Social Media Links</p>
+          <ul>
+              <li>
+                <a href="https://www.facebook.com/" title="Visit MyCat on Facebook">
+                    <img src="images/face.png" alt="Facebook icon" style="width=30;height=30;">
+                    <!--Ahkam. 2017. “Facebook Logo Png 2.” Free Icons Png. Accessed May1, http://www.freeiconspng.com/free-images/facebook-logo-png-1.-->
+                </a>
+            </li>
+            <li>
+                <a href="https://au.pinterest.com/" title="Visit MyCat on Pinterest">
+                    <img src="images/pin.png" alt="Pinterest icon" style="width=30;height=30;">
+                    <!--Pinterest. 2012. “Pinterest.” Brands of The World. https://www.brandsoftheworld.com/logo/pinterest-icon-0.-->
+                </a>
+            </li>
+            <li>
+                <a href="https://plus.google.com/" title="Visit MyCat on Google&#43;">
+                    <img src="images/goog.png" alt="Google&#43; icon" style="width=30;height=30;">
+                    <!--2017. “Google+ Logo.” JCR Off Road. Accessed May 1, https://www.jcroffroad.com/.-->
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/?lang=en" title="Visit MyCat on Twitter">
+                    <img src="images/twt.png" alt="Twitter icon" style="width=30;height=30;">
+                    <!--Ulum, Muhamad. 2017. “Bird, Follow, Hashtag, Logo …” Icon Finder. Accessed May 1, https://www.iconfinder.com/icons/299722/bird_follow_hashtag_logo_mention_retweet_social_social_media_tweet_tweets_twitter_icon. -->
+                </a>
+              </li>
+          </ul><br>
+
+
+      <ul class="footer_nav">
+        <li><a href="index.html" title="MyCat home">HOME</a></li>
+        <li><a href="about.html" title="About MyCat">ABOUT</a></li>
+        <li><a href="guide.html" title="Cat care guide">CAT CARE GUIDE</a>
+            <ul class="footer_nav_addi">
+              <li><a href="shelter.html" title="Creating My Cat&apos;s Home">Creating My Cat&apos;s Home</a></li>
+              <li><a href="food.html" title="Feeding My Cat">Feeding My Cat</a></li>
+              <li><a href="hygiene.html" title="Taking Care of My Cat&apos;s Hygiene">Taking Care of My Cat&apos;s Hygiene</a></li>
+              <li><a href="tips.html" title="Tips for Better Care of My Cat">Tips for Better Care</a></li>
+            </ul>
+        </li>
+        <li><a href="adoption.html" title="The basic adoption process">ADOPTION PROCESS</a></li>
+      </ul>
+</div>
+
+
+      <p>&copy; 2017 CANDY TANG</p>
+</body>
+</html>
