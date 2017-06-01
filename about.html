@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
       <meta name="About page for MyCat" content="About MyCat, cat care guide for elderly">
       <title>About MyCat</title>
@@ -10,16 +10,26 @@
       <!--This is the link to the font used for home page's h1 and h2s of cat care guide-->
       <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
       <!--Font for tag line, paragraphs and footer links-->
+    
+       <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    
 </head>
 <body>
+<main>
   <header>
       <nav class="nav-main">
       <!--the nav is given a class so that it can be targeted in CSS-->
       <ul>
         <li><a href="index.html" class="nav-item" title="MyCat home page">HOME</a></li>
         <li class="current"><a href="about.html" class="nav-item" title="About MyCat">ABOUT</a></li>
-        <li><a href="index.html" class="nav-item">
-            <img src="images/logo.png" alt="MyCat logo" style="width:200px; height:109px;">
+        <li><a href="index.html" class="nav-item logo_nav">
+            <img src="images/logo_design.svg" alt="MyCat logo">
             <!--This is the logo of my website; it will appear in the middle of the top navigation bar and be a clickable link back to the home page.-->
         </a></li>
         <li><a href="#" class="nav-item" title="Cat Care Guide menu">CAT CARE GUIDE</a>
@@ -42,18 +52,17 @@
   </header>
 
 
-
-<main>
-  <header>
-    <div class="header_icon"><img src="images/icon_about.png" alt="About MyCat icon" style:"width:90;height:87;"></div>
+<article>
+  <header class="head_title">
+    <div class="header_icon"><img src="images/icons/icon_about.svg" alt="About MyCat icon"></div>
     <h1 class="page_nav_title">ABOUT</h1>
-    <img src="images/about_header.jpg" alt="About page&apos;s head image" style="width:800px;height:489px;">
+    <img src="images/about_header.jpg" alt="About page&apos;s head image">
     <!--2016. “Breed Cats Without A Tail.” Best Cats. http://best-cats.net.ru/PorodaKoshek/porodi-koshek-bez-hvosta.-->
-    <!-- ABOUT page's large decorative image -->
+    <!-- ABOUT page's large decorative image. NOTE: an orange colour, which is the same oragne used across my site, filter is given to the image to create warmth and unity.-->
     <p>MyCat is a website that aims to help people who wants to adopt a cat but have little to no experience.<br> We will try to ease your anxiousness and provide valuable help and tips in your journey to taking care of your feline friend.</p>
   </header>
       <section>
-      <p>Through this website, you can learn about&#58;
+          <h4>Through this website, you can learn about&#58;</h4>
         <ul>
           <li><a href="shelter.html" title="Creating your cat&apos;s home">Creating your cat&apos;s home</a></li>
           <li><a href="food.html" title="Feeding your cat">Feeding your cat</a></li>
@@ -61,58 +70,48 @@
           <li><a href="tips.html" title="Tips for better care of your cat">Tips for better care of your cat</a></li>
           <li><a href="adoption.html" title="The basic adoption process">The basic adoption process</a></li>
         </ul>
-      </p>
       </section>
-      <aside>
-        <h3>Stay connected with MyCat for latest updates on&#58;</h3>
+    </article>
+    
+    
+      <aside class="clearfix">
+        <h5>Stay connected with MyCat for latest updates on&#58;</h5>
         <ul>
           <li>
             <a href="https://www.facebook.com/" title="Visit MyCat on Facebook">
-              <img src="images/face.png" alt="Facebook icon" style="width=30;height=30;">
+                <img src="images/socialmedia/face.png" alt="Facebook icon"></a>
               <!--Ahkam. 2017. “Facebook Logo Png 2.” Free Icons Png. Accessed May1, http://www.freeiconspng.com/free-images/facebook-logo-png-1.-->
-            <a href="https://www.facebook.com/" title="Facebook">Facebook</a>
+            <a href="https://www.facebook.com/" title="Facebook" class="media_name">Facebook</a>
           </li>
           <li>
             <a href="https://au.pinterest.com/" title="Visit MyCat on Pinterest">
-              <img src="images/pin.png" alt="Pinterest icon" style="width=30;height=30;">
+                <img src="images/socialmedia/pin.png" alt="Pinterest icon"></a>
               <!--Pinterest. 2012. “Pinterest.” Brands of The World. https://www.brandsoftheworld.com/logo/pinterest-icon-0.-->
-            <a href="https://au.pinterest.com/" title="Pinterest">Pinterest</a>
+            <a href="https://au.pinterest.com/" title="Pinterest" class="media_name">Pinterest</a>
           </li>
           <li>
             <a href="https://plus.google.com/" title="Visit MyCat on Google&#43;">
-              <img src="images/goog.png" alt="Google&#43; icon" style="width=30;height=30;">
+                <img src="images/socialmedia/goog.png" alt="Google&#43; icon"></a>
               <!--2017. “Google+ Logo.” JCR Off Road. Accessed May 1, https://www.jcroffroad.com/.-->
-            <a href="https://plus.google.com/" title="Google&#43;">Google&#43;</a>
+            <a href="https://plus.google.com/" title="Google&#43;" class="media_name">Google&#43;</a>
           </li>
           <li>
             <a href="https://twitter.com/?lang=en" title="Visit MyCat on Twitter">
-              <img src="images/twt.png" alt="Twitter icon" style="width=30;height=30;">
+                <img src="images/socialmedia/twt.png" alt="Twitter icon"></a>
               <!--Ulum, Muhamad. 2017. “Bird, Follow, Hashtag, Logo …” Icon Finder. Accessed May 1, https://www.iconfinder.com/icons/299722/bird_follow_hashtag_logo_mention_retweet_social_social_media_tweet_tweets_twitter_icon. -->
-            <a href="https://twitter.com/?lang=en" title="Twitter">Twitter</a>
+            <a href="https://twitter.com/?lang=en" title="Twitter" class="media_name">Twitter</a>
           </li>
         </ul>
       </aside>
-</main>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 
   <footer>
 <!--The logo goes to the LEFT in the footer-->
-<div class="footer_logo"
+<div class="footer_logo">
       <a href="index.html" title="MyCat">
-        <img src="images/logo.png" alt="MyCat logo" style="width=172px;height=94px;">
+        <img src="images/logo_design.svg" alt="MyCat logo">
       </a>
 </div>
 <!--This content goes in the MIDDLE of the footer-->
@@ -122,29 +121,31 @@
 <!--This goes to the RIGHT in the footer-->
 <div class="footer_links">
           <p>Social Media Links</p>
-          <ul>
+          <ul class="footer_social">
               <li>
                   <a href="https://www.facebook.com/" title="Visit MyCat on Facebook">
-                      <img src="images/face.png" alt="Facebook icon" style="width=30;height=30;">
+                      <img src="images/socialmedia/face.png" alt="Facebook icon">
                       <!--Ahkam. 2017. “Facebook Logo Png 2.” Free Icons Png. Accessed May1, http://www.freeiconspng.com/free-images/facebook-logo-png-1.-->
                   </a>
               </li>
               <li>
                   <a href="https://au.pinterest.com/" title="Visit MyCat on Pinterest">
-                      <img src="images/pin.png" alt="Pinterest icon" style="width=30;height=30;">
+                      <img src="images/socialmedia/pin.png" alt="Pinterest icon">
                       <!--Pinterest. 2012. “Pinterest.” Brands of The World. https://www.brandsoftheworld.com/logo/pinterest-icon-0.-->
                   </a>
               </li>
               <li>
                   <a href="https://plus.google.com/" title="Visit MyCat on Google&#43;">
-                      <img src="images/goog.png" alt="Google&#43; icon" style="width=30;height=30;">
+                      <img src="images/socialmedia/goog.png" alt="Google&#43; icon">
                       <!--2017. “Google+ Logo.” JCR Off Road. Accessed May 1, https://www.jcroffroad.com/.-->
+                      <!--note: image was edited by me to archive a unified look accross all of the social media icons-->
                   </a>
               </li>
               <li>
                   <a href="https://twitter.com/?lang=en" title="Visit MyCat on Twitter">
-                      <img src="images/twt.png" alt="Twitter icon" style="width=30;height=30;">
+                      <img src="images/socialmedia/twt.png" alt="Twitter icon">
                       <!--Ulum, Muhamad. 2017. “Bird, Follow, Hashtag, Logo …” Icon Finder. Accessed May 1, https://www.iconfinder.com/icons/299722/bird_follow_hashtag_logo_mention_retweet_social_social_media_tweet_tweets_twitter_icon. -->
+                      <!--note: image was edited by me to archive a unified look accross all of the social media icons-->
                   </a>
               </li>
           </ul><br>
@@ -168,5 +169,6 @@
 
       <p>&copy; 2017 CANDY TANG</p>
   </footer>
+</main>
 </body>
 </html>

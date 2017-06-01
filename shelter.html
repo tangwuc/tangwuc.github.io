@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
       <meta name="Creating your cat&apos;s home" content="How to create home for my cat for elderly">
       <title>Create Cat&apos;s Home</title>
@@ -10,16 +10,26 @@
       <!--This is the link to the font used for home page's h1 and h2s of cat care guide-->
       <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
       <!--Font for tag line, paragraphs and footer links-->
+    
+       <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    
 </head>
 <body>
+<main>
   <header>
       <nav class="nav-main">
       <!--the nav is given a class so that it can be targeted in CSS-->
       <ul>
         <li><a href="index.html" class="nav-item" title="MyCat home page">HOME</a></li>
         <li><a href="about.html" class="nav-item" title="About MyCat">ABOUT</a></li>
-        <li><a href="index.html" class="nav-item">
-            <img src="images/logo.png" alt="MyCat logo" style="width:200px; height:109px;">
+        <li><a href="index.html" class="nav-item logo_nav">
+            <img src="images/logo_design.svg" alt="MyCat logo">
             <!--This is the logo of my website; it will appear in the middle of the top navigation bar and be a clickable link back to the home page.-->
         </a></li>
         <li><a href="#" class="nav-item" title="Cat Care Guide menu">CAT CARE GUIDE</a>
@@ -43,15 +53,15 @@
 
 
 
-  <main>
+
     <article>
-      <header>
-        <div class="header_icon"><img src="images/icon_guide.png" alt="MyCat guide icon" style:"width:90;height:87;"></div>
-        <h1>Care Guide</h1>
-          <!--Harada, Akimasa. 2017. “Moment”. Reference. Accessed April 26, https://www.reference.com/pets-animals/percentage-day-cats-spend-sleeping-690ebe0d82d2f0e2.-->
+      <header class="head_title">
+        <div class="header_icon"><img src="images/icons/icon_guide.svg" alt="MyCat guide icon"></div>
+        <a href="guide.html" title="Go back to cat care guide" class="page_nav_title nav_title_hover">Care Guide</a>
         <h2>Creating My Cat&apos;s Home</h2>
+        <img src="images/subguide/header_shelter.jpg" alt="Shelter page header image"><!--Harada, Akimasa. 2017. “Moment”. Reference. Accessed April 26, https://www.reference.com/pets-animals/percentage-day-cats-spend-sleeping-690ebe0d82d2f0e2.-->
         <p>From bedding and carriers to kitty litter and toys we take a look at all the equipment essentials you&rsquo;ll need to care for your feline friend.</p>
-      </header/
+      </header>
       <section>
           <h3>KITTY LITTER</h3>
           <p>One of the perks of having a cat is that they&rsquo;re inclined by nature to &lsquo;go&rsquo; in the same area each time. No poop&#45;scooping missions in your backyard will be necessary. But that means you&sbquo;ll need to have a litter box for your cat.</p>
@@ -79,16 +89,17 @@
           <p>Be sure to also buy a cat carrier. It&#39;s the only safe way to transport your cat, even if you don&#39;t plan any trips longer than to the nearest vet. A loose cat in a car is NOT a good thing! Again, you&#39;ll be faced with a bewildering array of choices. Just make sure that the carrier you choose is well ventilated and sturdy.</p>
           <!--Bright, Eloise. 2017. "Cat Equipment Basics: What You Need." Love That Pet. Accessed April 23, https://www.lovethatpet.com/cats/getting-started/equipment/.-->
       </section>
+        <div class="go_back">
+        <a href="guide.html" title="Go back to cat care guide">Go Back to Cat Care Guide</a>
+        </div>
     </article>
-  </main>
-
 
 
   <footer>
 <!--The logo goes to the LEFT in the footer-->
-<div class="footer_logo"
+<div class="footer_logo">
       <a href="index.html" title="MyCat">
-        <img src="images/logo.png" alt="MyCat logo" style="width=172px;height=94px;">
+        <img src="images/logo_design.svg" alt="MyCat logo">
       </a>
 </div>
 <!--This content goes in the MIDDLE of the footer-->
@@ -98,29 +109,31 @@
 <!--This goes to the RIGHT in the footer-->
 <div class="footer_links">
           <p>Social Media Links</p>
-          <ul>
+          <ul class="footer_social">
               <li>
                   <a href="https://www.facebook.com/" title="Visit MyCat on Facebook">
-                      <img src="images/face.png" alt="Facebook icon" style="width=30;height=30;">
+                      <img src="images/socialmedia/face.png" alt="Facebook icon">
                       <!--Ahkam. 2017. “Facebook Logo Png 2.” Free Icons Png. Accessed May1, http://www.freeiconspng.com/free-images/facebook-logo-png-1.-->
                   </a>
               </li>
               <li>
                   <a href="https://au.pinterest.com/" title="Visit MyCat on Pinterest">
-                      <img src="images/pin.png" alt="Pinterest icon" style="width=30;height=30;">
+                      <img src="images/socialmedia/pin.png" alt="Pinterest icon">
                       <!--Pinterest. 2012. “Pinterest.” Brands of The World. https://www.brandsoftheworld.com/logo/pinterest-icon-0.-->
                   </a>
               </li>
               <li>
                   <a href="https://plus.google.com/" title="Visit MyCat on Google&#43;">
-                      <img src="images/goog.png" alt="Google&#43; icon" style="width=30;height=30;">
+                      <img src="images/socialmedia/goog.png" alt="Google&#43; icon">
                       <!--2017. “Google+ Logo.” JCR Off Road. Accessed May 1, https://www.jcroffroad.com/.-->
+                      <!--note: image was edited by me to archive a unified look accross all of the social media icons-->
                   </a>
               </li>
               <li>
                   <a href="https://twitter.com/?lang=en" title="Visit MyCat on Twitter">
-                      <img src="images/twt.png" alt="Twitter icon" style="width=30;height=30;">
+                      <img src="images/socialmedia/twt.png" alt="Twitter icon">
                       <!--Ulum, Muhamad. 2017. “Bird, Follow, Hashtag, Logo …” Icon Finder. Accessed May 1, https://www.iconfinder.com/icons/299722/bird_follow_hashtag_logo_mention_retweet_social_social_media_tweet_tweets_twitter_icon. -->
+                      <!--note: image was edited by me to archive a unified look accross all of the social media icons-->
                   </a>
               </li>
           </ul><br>
@@ -144,5 +157,6 @@
 
       <p>&copy; 2017 CANDY TANG</p>
   </footer>
+</main>
 </body>
 </html>
